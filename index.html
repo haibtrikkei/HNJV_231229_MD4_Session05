@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management!</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LIST PRODUCT</h1>
+        <form>
+            <table class="table table-bordered">
+                <tr>
+                    <td>Product Id: </td>
+                    <td><input type="text" id="proId" readonly></td>
+                </tr>
+                <tr>
+                    <td>Product Name: </td>
+                    <td><input type="text" id="proName"></td>
+                </tr>
+                <tr>
+                    <td>Producer: </td>
+                    <td><input type="text" id="producer"></td>
+                </tr>
+                <tr>
+                    <td>Year making: </td>
+                    <td><input type="number" id="yearMaking"></td>
+                </tr>
+                <tr>
+                    <td>Price: </td>
+                    <td><input type="number" id="price"></td>
+                </tr>              
+                <tr>
+                    <td></td>
+                    <td><button id="btnInsert">Insert</button></td>
+                </tr>
+            </table>
+        </form>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product Name</th>
+                    <th>Producer</th>
+                    <th>Year making</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="product-data">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
